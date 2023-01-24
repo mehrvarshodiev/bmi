@@ -48,7 +48,7 @@ calculateBtn.addEventListener("click", function(param) {
             resultText.style.borderBottom = "2px solid red";
         }
     } else if (
-        (heightInput.value == "" && weightInput.value == "") ||
+        (heightInput.value == "" || weightInput.value == "") ||
         (isNaN(heightInput.value) && isNaN(weightInput.value))
     ) {
         resultText.innerHTML = "Please fill fields with positive numbers!";
